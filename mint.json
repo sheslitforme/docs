@@ -28,7 +28,7 @@
   "anchors": [
     {
       "name": "Commands",
-      "icon": "slack",
+      "icon": "book-open-cover",
       "url": "https://evict.cc/commands"
     }
   ],
@@ -36,13 +36,17 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "home/introduction"
+      ]
+    },
+    {
+      "group": "Configuration",
+      "pages": [
+        "configuration/reskin"
       ]
     }
   ],
   "footerSocials": {
-    "Discord": "https://discord.gg/evict"
+    "discord": "https://discord.gg/evict"
   }
 }
