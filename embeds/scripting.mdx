@@ -1,0 +1,53 @@
+---
+title: 'Scripting Embeds'
+description: 'You can learn about how to script embeds for commands that support this feature.'
+icon: 'code'
+---
+
+<Info>Server prefix is set to `;` by default. Use `;prefix [symbol]` to change it for your server.</Info>
+
+### Embed Setup:
+
+To create a embed, you must know how to use [parameters](https://docs.evict.cc/embeds/parameters) and [variables](https://docs.evict.cc/embeds/variables).
+
+All embed code will begin with ``{embed}``. This is to specify that you want the content to be an embed instead of a normal message. Parameters will always begin with a left curly bracket to start your parameter.
+
+Now that you know what content different parameters accept, you can finish your parameter! After your left curly bracket, you need to specify what parameter you want to use. A basic one, description, would be written like this: ``{description}``. Now, you want to finish the rest of your parameter.
+
+<img height="200" src="/images/embeds/YczyEd.png" />
+In the screenshot above, the embed parameters being used are title, description, color, author, footer, and content.
+
+### Structure:
+
+``{`` begins a parameter.
+
+``$v`` seperates the parameters.
+
+``}`` ends a parameter.
+
+### Multiple Parameters:
+
+At some point, you will need to add multiple parameters to an embed. You can do this by inserting ``$v`` after your first parameter, then writing your next parameter just like you wrote your last one. Your output will look something like this:
+```py
+{embed}{description: Hello}$v{title: Hi}
+```
+
+### Using Variables in Parameters:
+
+<Info>Variables can only be used in strings.</Info>
+
+Variables are automatically replaced strings of text that vary depending on the user and guild. Structure of variables are similar to parameters, but you don't need to add a colon anywhere. This is because variables output automated information, nothing will be set by you.
+<img height="200" src="/images/embeds/F4dxGR.png" />
+You can see in the image above, ``{guild.count}`` was inputted and the embed code turned that into the server's member count. For a list of variables, [click here](https://docs.evict.cc/embeds/parameters).
+
+### Commands That Take Embeds:
+
+If a * is added next to the command, it means the command will take raw text or an embed. All subcommands under invoke take both raw text or embeds.
+
+- welcome add*
+- leave add*
+- boost add*
+- level message*
+- lastfm embed*
+- joindm*
+- vanity message*

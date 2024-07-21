@@ -5,7 +5,7 @@
     "dark": "/logo/evict.ico",
     "light": "/logo/evict.ico"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/evict.svg",
   "colors": {
     "primary": "#CCCCFF",
     "light": "#CCCCFF",
@@ -43,6 +43,14 @@
       "group": "Configuration",
       "pages": [
         "configuration/reskin"
+      ]
+    },
+    {
+      "group": "Embeds",
+      "pages": [
+        "embeds/scripting",
+        "embeds/parameters",
+        "embeds/variables"
       ]
     }
   ],
