@@ -42,7 +42,8 @@
     {
       "group": "Configuration",
       "pages": [
-        "configuration/reskin"
+        "configuration/reskin",
+        "configuration/lastfm"
       ]
     },
     {
