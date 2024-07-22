@@ -43,7 +43,10 @@
       "group": "Configuration",
       "pages": [
         "configuration/reskin",
-        "configuration/lastfm"
+        "configuration/lastfm",
+        "configuration/moderation",
+        "configuration/voicemaster",
+        "configuration/counters"
       ]
     },
     {
