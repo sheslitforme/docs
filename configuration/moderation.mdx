@@ -3,3 +3,25 @@ title: "Moderation"
 description: "Setup moderation commands to allow mods to use Evict."
 icon: "hammer"
 ---
+
+<Info>Server prefix is set to `;` by default. Use `;prefix [symbol]` to change it for your server.</Info>
+
+## Overview & Setup:
+
+To setup moderation, you need to run the following command:
+
+```py
+;setmod
+```
+
+## Explanation:
+
+Setting this up creates a jail channel, modlog channel and a jail role. The jailed channel cannot be accessed by anyone unless they have administrator permissions. You can override this in channel settings.
+
+<img height="200" src="/images/moderation/CJ4teg.png" />
+
+This role should never be added manually, this should only be applied to jailed members. These additions can be utilized by using the ``;jail`` command. Using this command will remove all roles from a member (that the bot can manage) and add the jailed role to them. Doing this will only allow them to see the jailed channel.
+
+<Info>Category overrides will be created for every category denying the View Channel permission for the jailed role. This is essential for the jail module to function correctly..</Info>
+
+Run ``;unjail`` to unjail a jailed member.

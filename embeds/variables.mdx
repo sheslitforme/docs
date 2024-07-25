@@ -3,3 +3,46 @@ title: 'Variables'
 description: 'You can learn about how to script embeds for commands that support this feature.'
 icon: 'code'
 ---
+
+## User Related Variables:
+
+| Variable                             | Output                                        |
+| ------------------------------------ | --------------------------------------------- |
+| ``{user.name}``                      | Returns user name                             |
+| ``{user.mention}``                   | Mentions the user                             |
+| ``{user.id}``                        | Returns user ID                               |
+| ``{user.created_at}``                | Returns user creation date in timestamp format|
+| ``{user.joined_at}``                 | Returns user join date in timestamp format    |
+
+## Guild Related Variables:
+
+| Variable                             | Output                                                 |
+| ------------------------------------ | ------------------------------------------------------ |
+| ``{guild.name}``                     | Returns guild name                                     |
+| ``{guild.icon}``                     | Returns guild icon                                     |   
+| ``{guild.count}``                    | Returns guild member count                             |
+| ``{guild.created_at}``               | Returns guild creation date in timestamp format        |
+| ``{guild.count.format}``             | Returns guild member count in ordinal format           |
+| ``{guild.boost_count}``              | Returns guild boost count                              |
+| ``{guild.boost_count.format}``       | Returns guild boost amount in ordinal format           |
+| ``{guild.booster_count}``            | Returns the amount of people boosting                  |
+| ``{guild.booster_count.format}``     | Returns the amount of people boosting in ordinal format|
+| ``{guild.boost_tier}``               | Returns guilds boost level                             |
+| ``{guild.vanity}``                   | Returns the guilds vanity                              |
+
+## Invoke Related Variables:
+
+| Variable                             | Output                                                 |
+| ------------------------------------ | ------------------------------------------------------ |
+| ``{member.name}``                    | Returns members name                                   |
+| ``{member.mention}``                 | Returns member mention                                 |
+| ``{member.id}``                      | Returns member ID                                      |
+| ``{member.avatar}``                  | Returns members avatar                                 |
+| ``{reason}``                         | Returns the action reason, if any                      |
+
+## LastFM Related Variables:
+
+| Variable                             | Output                                                 |
+| ------------------------------------ | ------------------------------------------------------ |
+| ``{scrobbles}``                      | Returns all song play count                            |
+| ``{trackplays}``                     | Returns the track total plays                          |
