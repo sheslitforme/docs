@@ -30,13 +30,19 @@
       "name": "Commands",
       "icon": "book-open-cover",
       "url": "https://evict.cc/commands"
+    },
+    {
+      "name": "Status",
+      "icon": "tower-broadcast",
+      "url": "https://evict.cc/status"
     }
   ],
   "navigation": [
     {
       "group": "Get Started",
       "pages": [
-        "home/introduction"
+        "home/introduction",
+        "home/updates"
       ]
     },
     {

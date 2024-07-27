@@ -8,34 +8,34 @@ icon: "lastfm"
 
 ## Setup:
 
-Last.fm is a way to show what you're listening to. Make sure you have a last.fm account. If you don't, [go here](https://last.fm/join).
+Last.fm is a way to show what you're listening to. Make sure you have a Last.fm account. If you don't, [go here](https://last.fm/join).
 
 Run the following command:
 
 ```py
-;lastfm set [username]
+;lastfm login
 ```
 
 ## Logging in:
 
-<img height="200" src="/images/lastfm/gS6Mre.png" />
+<img height="200" src="/images/lastfm/HMri8U.png" />
 
-Once that is done, Evict will connect to your LastFM account.
+Evict will DM you asking you to authorize your account with Last.fm, click on the link, login to your Last.fm account and authorize the application.
+Once this is done, you should see the following message:
 
-## This account doesn't exist:
-
-If you get this message, the specified last.fm account does not exist. Are there spelling mistakes in your username? Did you create your last.fm account?
-
-<img height="200" src="/images/lastfm/iBfUMS.png" />
+<img height="200" src="/images/lastfm/tg12pm.png" />
 
 ## Unlink the account:
-To remove your last.fm account from the bot, simply run ``;lastfm remove``. All of your last.fm data will be removed from the Evict's database.
+To remove your last.fm account from the bot, simply run ``;lastfm remove``. All of your Last.fm data will be removed from the Evict's database.
 
 ## What now?
 That's all to it! Run the ``;fm`` or ``;nowplaying`` command to share what you're listening to. This works by taking the music statistics from your Last.fm account. You can connect your Spotify account and start scrobbling from there by [going here](https://last.fm/settings/applications).
 
-<Info>If this command does not show the correct song, either your last.fm library is not updated or you are not currently scrobbling anything.</Info>
+<Info>If this command does not show the correct song, either your Last.fm library is not updated or you are not currently scrobbling anything.</Info>
 <img height="200" src="/images/lastfm/MAoY7k.png" />
 
 ## Errors:
 Most last.fm errors come from the Last.fm API being broken. We have **no control** over these errors, you would have to wait for Last.fm to fix it. If you encounter another error, please let us know in our [support server](https://discord.gg/evict).
+
+
+Removing your Last.fm account from Evict and readding it **does not** fix this.
